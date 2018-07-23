@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to make all the html5 elements.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+var br = document.createElement("br");
+document.body.appendChild(br);
+
+var input = document.createElement("input");
+var att = document.createAttribute("type"); 
+att.value = "number"; 
+input.setAttributeNode(att);
+document.body.appendChild(input);
+
+var br = document.createElement("br");
+document.body.appendChild(br);
+
+var input = document.createElement("input");
+var att = document.createAttribute("type"); 
+att.value = "color"; 
+input.setAttributeNode(att);
+document.body.appendChild(input);
+
+var br = document.createElement("br");
+document.body.appendChild(br);
+
+
+}
+</script>
+
+</body>
+</html>
