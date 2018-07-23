@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BCSE102 Test Assignment</title>
+  <!-- include source files here... -->
+  <link rel="stylesheet" href="src/styles/stylesheet.css">
+  <script src="src/Question.js"></script>
+  <script src="src/Test.js"></script>
+  <script src="src/View.js"></script>
+  <script src="src/Answer.js"></script>
+  <script src="src/controller.js"></script>
+  <div id="divDisplay"></div>
+</head>
+<body>
+  <script>
+  var IntroToProgramming // GLOBAL FOR DEBUGGING
+    var go = function () {
+        IntroToProgramming = Controller.setup()
+      let theDisplay = document.getElementById( 'divDisplay')
+      document.body.style.fontFamily = 'Times'
+	  addPoolResults(IntroToProgramming)
+      theDisplay.innerHTML = IntroToProgramming.getAll()
+      console.log(IntroToProgramming) 
+    }
+    window.onload = go;
+  </script> 
+</body> 
+</html>
